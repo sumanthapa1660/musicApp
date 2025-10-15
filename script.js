@@ -5,7 +5,6 @@ randomStart.addEventListener('click', () => {
         music.play();
         masterPlay.classList.add('fa-pause');
         masterPlay.classList.remove('fa-play');
-
     }else{
         music.pause();
         masterPlay.classList.add('fa-play');
@@ -41,43 +40,43 @@ followBtn.addEventListener('click', () => {
 
 
 // AUDIO
-const music = new Audio('1.mp3');
+const music = new Audio('assets/songs/1.mp3');
 
-const songs = [
+const listsongs = [
     {
         id: '1',
         songName: `<a href="#">Timeless(feet Playboi Carti)</a>`,
-        poster: "img/1.jpg",
+        poster: "assets/1.jpg",
     },
     {
         id: '2',
         songName: `<a href="#">One Of The Girls(with JENNIE,Lily Rose Depp)</a>`,
-        poster: "img/2.jpg",
+        poster: "assets/2.jpg",
     },
     {
         id: '3',
         songName: `<a href="#">Starboy</a>`,
-        poster: "img/3.jpg",
+        poster: "assets/3.jpg",
     },
     {
         id: '4',
         songName: `<a href="#">Call Out My Name</a>`,
-        poster: "img/4.jpg",
+        poster: "assets/4.jpg",
     },
     {
         id: '5',
         songName: `<a href="#">I Was Never There(The Weeknd, Gesaffelstein)</a>`,
-        poster: "img/5.jpg",
+        poster: "assets/5.jpg",
     },
     {
         id: '6',
         songName: `<a href="#">After Hours</a`,
-        poster: "img/6.jpg",
+        poster: "assets/6.jpg",
     },
     {
         id: '7',
         songName: `<a href="#">Dancing In The Flames</a>`,
-        poster: "img/7.jpg",
+        poster: "assets/7.jpg",
     },
 ]
 
@@ -86,7 +85,7 @@ const songs = [
 
 // For img change according to the selected song
 Array.from(document.getElementsByClassName('row1')).forEach((e, i) => {
-    e.getElementsByTagName('img')[0].src = songs[i].poster;
+    e.getElementsByTagName('img')[0].src = listsongs[i].poster;
 });
 
 
@@ -120,8 +119,8 @@ let bi_pauseIcon = document.getElementById('1');
 Array.from(document.getElementsByClassName('bi-play-fill')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
-        music.src = `${index}.mp3`;
-        posterImgBar.src = `img/${index}.jpg`;
+        music.src = `assets/songs/${index}.mp3`;
+        posterImgBar.src = `assets/${index}.jpg`;
         music.play();
         if(music.play){
             music.play();
@@ -134,7 +133,7 @@ Array.from(document.getElementsByClassName('bi-play-fill')).forEach((e) => {
             masterPlay.classList.remove('fa-pause');
         }
 
-        let songTitle = songs.filter((els) => {
+        let songTitle = listsongs.filter((els) => {
             return els.id == index;
         });
 
@@ -248,8 +247,8 @@ back.addEventListener('click', () => {
     if(index < 1){
         index = Array.from(document.getElementsByClassName('row1')).length;
     }
-    music.src = `${index}.mp3`;
-    posterImgBar.src = `img/${index}.jpg`;
+    music.src = `assets/songs/${index}.mp3`;
+    posterImgBar.src = `assets/${index}.jpg`;
     music.play();
     if(music.play){
         music.play();
@@ -261,7 +260,7 @@ back.addEventListener('click', () => {
         masterPlay.classList.remove('fa-pause');
     }
 
-    let songTitle = songs.filter((els) => {
+    let songTitle = listsongs.filter((els) => {
         return els.id == index;
     });
 
@@ -276,8 +275,8 @@ next.addEventListener('click', () => {
     if(index > Array.from(document.getElementsByClassName('row1')).length){
         index =1;
     }
-    music.src = `${index}.mp3`;
-    posterImgBar.src = `img/${index}.jpg`;
+    music.src = `assets/songs/${index}.mp3`;
+    posterImgBar.src = `assets/${index}.jpg`;
     music.play();
     if(music.play){
         music.play();
@@ -289,7 +288,7 @@ next.addEventListener('click', () => {
         masterPlay.classList.remove('fa-pause');
     }
 
-    let songTitle = songs.filter((els) => {
+    let songTitle = listsongs.filter((els) => {
         return els.id == index;
     });
 
@@ -313,8 +312,8 @@ music_shuffle.addEventListener('click', () => {
     if(index > Array.from(document.getElementsByClassName('row1')).length){
         index =1;
     }
-    music.src = `${index}.mp3`;
-    posterImgBar.src = `img/${index}.jpg`;
+    music.src = `assets/songs/${index}.mp3`;
+    posterImgBar.src = `assets/${index}.jpg`;
     music.play();
     if(music.play){
         music.play();
@@ -328,7 +327,7 @@ music_shuffle.addEventListener('click', () => {
         music_shuffle.style.color = 'rgb(143, 143, 143);';
     }
 
-    let songTitle = songs.filter((els) => {
+    let songTitle = listsongs.filter((els) => {
         return els.id == index;
     });
 

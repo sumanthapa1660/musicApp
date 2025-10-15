@@ -116,10 +116,10 @@ h5{
 .singer-img{
     height: 23rem;
     width: 100%;
-    background-image: url("The-Weeknd.jpg");
+    background-image: url("/assets/The-Weeknd.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    display: flex;  
     align-items: start;
     flex-direction: column;
     justify-content: space-evenly;

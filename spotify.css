@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: #000;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+}
+
+.logobar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #131416, #08090a);
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.logo{
+    height: 60px;
+    width: 120px;
+    margin-left: 10px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.logobar .sign-up{
+    height: 40px;
+    width: 120px;
+    margin-right: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 0.90rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+}
+
+.logobar .sign-up:hover{
+    transform: scale(1.05);
+    background-color: rgb(215, 215, 215);
+}
+
+.spotify-section{
+    height: auto;
+    width: 100%;
+    margin-top: 7px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* left container */
+.left-container{
+    height: 122vh;
+    width: 29.5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #171717;
+    border-radius: 8px;
+}
+
+.section-1{
+    height: auto;
+    width: 96%;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: #292929;
+}
+
+.homeBtn{
+    margin-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+h5{
+    padding-left: 8px;
+    font-size: 1rem;
+    color: rgb(208, 208, 208);
+}
+
+.favBtn{
+    margin-left: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+
+
+
+/* right-contianer */
+.right-container{
+    height: 122vh;
+    width: 68.5%;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+/* singer image */
+.singer-img{
+    height: 23rem;
+    width: 100%;
+    background-image: url("The-Weeknd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.blue-tick{
+    display: flex;
+}
+
+.tick{
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 20px;
+}
+
+.blue-tick h3{
+    font-weight: normal;
+    font-size: 1rem;
+    display: flex;
+    align-self: center;
+}
+
+h1{
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+h4{
+    margin-left: 20px;
+    font-size: 0.90rem;
+}
+
+
+/* music section */
+.music-seciton{
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to bottom, #2A8BF4, #084F9B, #053161);
+}
+
+.play{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.play i{
+    font-size: 3.5rem;
+    color: rgb(46, 201, 46);
+    cursor: pointer;
+}
+
+.play i:hover{
+    transform: scale(1.06);
+    color: rgb(108, 212, 108);
+}
+
+.play i:active{
+    transform: scale(1.0);
+    color: rgb(46, 201, 46);
+}
+
+.f-btn{
+    height: 30px;
+    width: 65px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.f-btn:hover{
+    border: 1.8px solid white;
+    transform: scale(1.06);
+}
+
+.f-btn:active{
+    transform: scale(1.0);
+    background-color: rgba(255, 255, 255, 0.218);
+}
+
+.pop{
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to bottom, #053161, #031E3A, #021427);
+}
+
+.pop h1{
+    font-size: 1.6rem;
+}
+
+
+/* song section */
+.audio-section{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #021427, #010A13, #000); 
+}
+
+.row1{
+    height: 51px;
+    width: 98%; 
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.row1:hover{
+    background-color: rgba(107, 107, 107, 0.39);
+    .bi-play-fill{
+        opacity: 1;
+    }
+
+    span{
+        opacity: 0;
+    }
+}
+
+.p1{
+    width: auto;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+span{
+    margin-left: 15px;
+    color: rgb(146, 146, 146);
+    font-weight: bold;
+    cursor: default;
+}
+
+.row1 .bi-play-fill{
+    position: absolute;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: 9px;
+    opacity: 0;
+}
+
+.row1 .bi-play-fill:hover{
+    opacity: 1;
+}
+
+.song1{
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+a{
+    margin-left: 10px;
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.p2{
+    width: 42%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listeners{
+    color: rgb(189, 189, 189);
+    cursor: default;
+}
+
+.listeners:hover{
+    color: white;
+}
+
+.duration{
+    color: rgb(189, 189, 189);
+    cursor: default;
+    margin-right: 15px;
+}
+
+
+
+/* footer music */
+footer{
+    height: 83px;
+    width: 100%;   
+}
+
+.play-song{
+    background: linear-gradient(to bottom, rgb(32, 1, 31), #090A0B);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 14px 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px 0px 15px rgb(96, 9, 94);
+}   
+
+.music-pic{
+    display: flex;
+    align-items: center;
+}
+
+#mp1{
+    height: 45px;
+    width: 45px;
+    margin-left: 15px;
+}
+
+#title{
+    color: rgb(219, 219, 219);
+    font-size: 0.90rem;
+    margin-left: 10px;
+}
+
+#music-heart{
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: rgb(140, 140, 140);
+}
+
+#music-heart:hover{
+    color: white;
+}
+
+.control-system .i-box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-system i{
+    height: 25px;
+    width: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.i-box #shuffle{
+    color: rgb(143, 143, 143);
+}
+
+#shuffle:hover{
+    color: white;
+}
+
+#backward{
+    color: rgb(143, 143, 143);
+}
+
+#backward:hover{
+    color: white;
+}
+
+#forward{
+    color: rgb(143, 143, 143);
+}
+
+#forward:hover{
+    color: white;
+}
+
+#repeat{
+    color: rgb(143, 143, 143);
+}
+
+#repeat:hover{
+    color: white;
+}
+
+.timerCount{
+    display: flex;
+    width: 700px;
+}
+
+.timerCount span{
+    color: #fff;
+    width: 32px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.timerCount #currentStart{
+    margin: 0px 0px 0px 20px;
+}
+
+.timerCount #currentEnd{
+    margin: 0px 0px 0px 20px;
+}
+
+.control-system .timerCount .progress-box{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(119, 119, 119, 0.359);
+    margin: 6px 0px 0px 10px;
+}
+
+.progress-box input{
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999999999;
+    opacity: 0;
+}
+
+.progress-box .bar2{
+    position: absolute;
+    background-color: rgb(176, 34, 181);
+    width: 0%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;
+}
+
+.play-song .volume-box{
+    position: relative;
+    width: 100px;
+    height: 3px;
+    background-color: rgba(119, 119, 119, 0.359);
+    margin-left: 50px;
+
+}
+
+.play-song .volume-box i{
+    position: absolute;
+    font-size: 0.95rem;
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+    top: -6px;
+    left: -26px;
+}
+
+#volumeBtn:hover{
+    color: white;
+}
+
+.play-song .volume-box input{
+    position: absolute;
+    width: 100%;
+    top: -10px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999999999;
+    opacity: 0;
+}
+
+.play-song .volume-box .vol_bar{
+    position: absolute;
+    background-color: rgb(176, 34, 181);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;    
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <header>
+        <div class="logobar">
+            <img src="spotify-logo.png" class="logo"/>
+            <button class="sign-up">Sign up</button>
+        </div>
+    </header>
+
+    <div class="spotify-section">
+        <div class="left-container"> <!-- left container -->
+            <div class="section-1">
+                <div class="homeBtn">
+                    <i class="fa-solid fa-house"></i>
+                    <h5>Home</h5>
+                </div>
+        
+                <div class="favBtn">
+                    <i class="fa-regular fa-heart"></i>
+                    <h5>Favourite lists</h5>
+                </div>
+        
+                <div class="f-list">
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- right section -->
+        <div class="right-container">
+            <!-- singer-image -->
+            <div class="singer-img">
+                <div class="blue-tick">
+                    <h3>Verified Artist</h3>
+                </div>
+                <h1>The Weeknd</h1>
+                <h4>120,112,655 monthly listeners</h4>
+            </div>
+    
+
+            <!-- music section -->
+            <div class="music-seciton">
+                <div class="play">
+                    <i class="fa-solid fa-circle-play" id="start-song-random"></i>
+                    <button class="f-btn">Follow</button>
+                    . . .
+                </div>
+            </div>
+
+            <div class="pop">
+                <h1>Popular</h1>
+            </div>
+            <!-- song section -->
+            <div class="audio-section"> 
+                <div class="row1">
+                    <div class="p1">
+                        <span>1</span>
+                        <i class="bi bi-play-fill" id="1"></i>
+                        <img src="img/1.jpg" class="song1">
+                        <a href="#">Timeless(feet Playboi Carti)</a>
+                    </div>
+        
+                    <div class="p2">
+                        <div class="listeners">679,840,020</div>
+                        <div class="duration">4:16</div>
+                    </div>
+                </div>
+
+
+                <div class="row1">
+                    <div class="p1">
+                        <span>2</span>
+                        <i class="bi bi-play-fill" id="2"></i>
+                        <img src="img/2.jpg" class="song1">
+                        <a href="#">One Of The Girls(with JENNIE,Lily Rose Depp)</a>
+                    </div>
+        
+                    <div class="p2">
+                        <div class="listeners">1,707,115,967</div>
+                        <div class="duration">4:04</div>
+                    </div>
+                </div>
+        
+        
+                <div class="row1">
+                    <div class="p1">
+                        <span>3</span>
+                        <i class="bi bi-play-fill" id="3"></i>
+                        <img src="img/3.jpg" class="song1">
+                        <a href="#">Starboy</a>
+                    </div>
+        
+                    <div class="p2">
+                        <div class="listeners">3,797,370,354</div>
+                        <div class="duration">4:04</div>
+                    </div>
+                </div>
+                
+                <div class="row1">
+                    <div class="p1">
+                        <span>4</span>
+                        <i class="bi bi-play-fill" id="4"></i>
+                        <img src="img/4.jpg" class="song1">
+                        <a href="#">Call Out My Name</a>
+                    </div>
+        
+                    <div class="p2">
+                        <div class="listeners">2,045,595,501</div>
+                        <div class="duration">4:02</div>
+                    </div>
+                </div>
+
+                <div class="row1">
+                    <div class="p1">
+                        <span>5</span>
+                        <i class="bi bi-play-fill" id="5"></i>
+                        <img src="img/5.jpg" class="song1">
+                        <a href="#">I Was Never There(The Weeknd, Gesaffelstein)</a>
+                    </div>
+        
+                    <div class="p2">
+                        <div class="listeners">1,589,556,168</div>
+                        <div class="duration">2:17</div>
+                    </div>
+                </div>
+
+
+                <div class="row1">
+                    <div class="p1">
+                        <span>6</span>
+                        <i class="bi bi-play-fill" id="6"></i>
+                        <img src="img/6.jpg" class="song1">
+                        <a href="#">After Hours</a>
+                    </div>
+        
+                    <div class="p2">
+                        <div class="listeners">558,566,875</div>
+                        <div class="duration">6:01</div>
+                    </div>
+                </div>
+        
+
+                <div class="row1">
+                    <div class="p1">
+                        <span>7</span>
+                        <i class="bi bi-play-fill" id="7"></i>
+                        <img src="img/7.jpg" class="song1">
+                        <a href="#">Dancing In The Flames</a>
+                    </div>
+        
+                    <div class="p2">
+                        <div class="listeners">1,556,781,245</div>
+                        <div class="duration">4:20</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer music -->
+    <footer>
+        <div class="play-song">
+            <div class="music-pic">
+                <img src="img/1.jpg" id="mp1">
+                <h3 id="title">Timeless (feat Playboi Carti) <br>The Weeknd</br></h3>
+                <i class="fa-regular fa-heart" id="music-heart"></i>
+            </div>
+
+
+            <div class="control-system">
+                <div class="i-box">
+                    <i class="bi bi-shuffle" id="shuffle"></i>
+                    <i class="fa-solid fa-backward-step" id="backward"></i>
+                    <i class="fa-solid fa-play" id="playBtn"></i>
+                    <i class="fa-solid fa-forward-step" id="forward"></i>
+                    <i class="bi bi-repeat" id="repeat"></i>
+                </div>
+                
+                <div class="timerCount">
+                    <span id="currentStart">0:00</span>
+                    <div class="progress-box">
+                        <input type="range" id="progress" min="0" max="100">
+                        <div class="bar2" id="bar2"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <span id="currentEnd">4:16</span>
+                </div>
+                
+                    
+            </div>
+
+
+            <div class="volume-box">
+                <i class="fa-solid fa-volume-high" id="volumeBtn"></i>
+                <input type="range" min="0" max="100" id="vol_input"/>
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+
+
+        
+    </footer>
+
+
+    
+        
+    <script src="spotify.js"></script>
+</body>
+</html>    
